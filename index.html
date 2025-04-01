@@ -180,15 +180,14 @@
 				</div>
 				<script>
 					const imageList = [
-						"ANAN0009.jpg","ANAN0074.jpg","ANAN0164.jpg","ANAN0223.jpg","ANAN0249.jpg",
-						"ANAN0262.jpg","ANAN0271.jpg","ANAN0296.jpg","ANAN0338.jpg","ANAN0373.jpg",
-						"ANAN0426.jpg","ANAN0492.jpg","ANAN0614.jpg","ANAN0636.jpg","ANAN0660.jpg",
-						"ANAN0673.jpg","ANAN0685.jpg","ANAN0688.jpg","ANAN0733.jpg","ANAN0735.jpg",
-						"ANAN0777.jpg","ANAN0807.jpg","ANAN0819.jpg","ANAN0859.jpg","ANAN0887.jpg",
-						"ANAN0921.jpg","ANAN0928.jpg","ANAN0955.jpg","ANAN0976.jpg",
-						"ANAN0992.jpg","ANAN1008.jpg","ANAN1037.jpg","ANAN1060.jpg","ANAN1091.jpg",
-						"ANAN1094.jpg","ANAN1111.jpg","ANAN1159.jpg","ANAN1211.jpg","ANAN1235.jpg",
-
+						"ANAN0009.JPG","ANAN0074.JPG","ANAN0164.JPG","ANAN0223.JPG","ANAN0249.JPG",
+						"ANAN0262.JPG","ANAN0271.JPG","ANAN0296.JPG","ANAN0338.JPG","ANAN0373.JPG",
+						"ANAN0426.JPG","ANAN0492.JPG","ANAN0614.JPG","ANAN0636.JPG","ANAN0660.JPG",
+						"ANAN0673.JPG","ANAN0685.JPG","ANAN0688.JPG","ANAN0733.JPG","ANAN0735.JPG",
+						"ANAN0777.JPG","ANAN0807.JPG","ANAN0819.JPG","ANAN0859.JPG","ANAN0887.JPG",
+						"ANAN0921.JPG","ANAN0928.JPG","ANAN0955.JPG","ANAN0976.JPG",
+						"ANAN0992.JPG","ANAN1008.JPG","ANAN1037.JPG","ANAN1060.JPG","ANAN1091.JPG",
+						"ANAN1094.JPG","ANAN1111.JPG","ANAN1159.JPG","ANAN1211.JPG","ANAN1235.JPG",
 					];
 				
 					const galleryList = document.getElementById("fh5co-gallery-list");
@@ -197,9 +196,9 @@
 						let li = document.createElement("li");
 						li.className = "one-third animate-box";
 						li.setAttribute("data-animate-effect", "fadeIn");
-						li.style.backgroundImage = `url(./images/${image})`;
+						li.style.backgroundImage = `url(./images/album/${image})`;
 						li.innerHTML = `
-							<a href="./images/${image}">
+							<a href="./images/album/${image}">
 								<div class="case-studies-summary"></div>
 							</a>
 						`;
