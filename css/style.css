@@ -33,6 +33,9 @@ body {
   overflow: hidden;
   position: absolute;
 }
+.no-click {
+    pointer-events: none;
+}
 .offcanvas #page:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
