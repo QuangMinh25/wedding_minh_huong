@@ -1798,7 +1798,9 @@ form label {
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
 }
-
+.navbar {
+    display: none !important;
+}
 .js .animate-box {
   opacity: 0;
 }
