@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Q.Minh ❤️ Q.Hương - 01.06.2025</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Chúng tôi sắp kết hôn - Ngày tổ chức là 25 và 01 tháng 06 năm 2022 và chúng tôi muốn bạn tham gia." />
+	<meta name="description" content="Chúng tôi sắp kết hôn - Ngày tổ chức là 18 tháng 5 và 01 tháng 06 năm 2022 và chúng tôi muốn bạn tham gia." />
 	<meta name="keywords" content="minh,hương,wedding,website,rsvp" />
 	<meta name="author" content="Quang Minh & Quỳnh Hương" />
 
@@ -176,30 +176,38 @@
 			</div>
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
-					<ul id="fh5co-gallery-list">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS1.jpg); "> 
-						<a href="images/RS1.jpg">
-							<div class="case-studies-summary">
-							</div>
-						</a>
-					</li>
-
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS2.jpg); "> 
-						<a href="images/RS2.jpg">
-							<div class="case-studies-summary">
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS3.jpg); "> 
-						<a href="images/RS3.jpg">
-							<div class="case-studies-summary">
-							</div>
-						</a>
-					</li>
-					
-					</ul>		
+					<ul id="fh5co-gallery-list"></ul>
 				</div>
+				<script>
+					const imageList = [
+						"ANAN0009.jpg","ANAN0074.jpg","ANAN0164.jpg","ANAN0223.jpg","ANAN0249.jpg",
+						"ANAN0262.jpg","ANAN0271.jpg","ANAN0296.jpg","ANAN0338.jpg","ANAN0373.jpg",
+						"ANAN0426.jpg","ANAN0492.jpg","ANAN0614.jpg","ANAN0636.jpg","ANAN0660.jpg",
+						"ANAN0673.jpg","ANAN0685.jpg","ANAN0688.jpg","ANAN0733.jpg","ANAN0735.jpg",
+						"ANAN0777.jpg","ANAN0807.jpg","ANAN0819.jpg","ANAN0859.jpg","ANAN0887.jpg",
+						"ANAN0921.jpg","ANAN0928.jpg","ANAN0955.jpg","ANAN0976.jpg",
+						"ANAN0992.jpg","ANAN1008.jpg","ANAN1037.jpg","ANAN1060.jpg","ANAN1091.jpg",
+						"ANAN1094.jpg","ANAN1111.jpg","ANAN1159.jpg","ANAN1211.jpg","ANAN1235.jpg",
+
+					];
+				
+					const galleryList = document.getElementById("fh5co-gallery-list");
+				
+					imageList.forEach(image => {
+						let li = document.createElement("li");
+						li.className = "one-third animate-box";
+						li.setAttribute("data-animate-effect", "fadeIn");
+						li.style.backgroundImage = `url(images/album/${image})`;
+				
+						li.innerHTML = `
+							<a href="images/album/${image}">
+								<div class="case-studies-summary"></div>
+							</a>
+						`;
+				
+						galleryList.appendChild(li);
+					});
+				</script>
 			</div>
 		</div>
 	</div>
